@@ -1,0 +1,4 @@
+['remote "myazure"']
+url = azure://ContainerName=dvctutorial;DefaultEndpointsProtocol=https;AccountName=everisiadvcblob;AccountKey=CtKvn0+hHH1BrS9TYiyJk0P/m6je0HOLCBaXSsux4+9zP8mKhlt91Rk5HUH6Rp8a9B9dFkXVe/LJiVi1XBU23w==;EndpointSuffix=core.windows.net
+[core]
+remote = myazure

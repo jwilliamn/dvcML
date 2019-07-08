@@ -1,0 +1,8 @@
+md5: d14cc93256a669b2752c27ad4deed118
+wdir: .
+outs:
+- md5: 37227029b749a0d226bc1d115f33c7e3.dir
+  path: SQuAD
+  cache: true
+  metric: false
+  persist: false
