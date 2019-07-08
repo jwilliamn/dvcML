@@ -1,1 +1,4 @@
-
+['remote "myazure"']
+url = azure://dvctutorial/
+[core]
+remote = myazure
