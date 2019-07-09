@@ -5,3 +5,8 @@ Data version Control (DVC) is a version control system that tracks large data se
 More information about DVC can be found on the official webpage <https://dvc.org/>
 
 This repository shows you how to integrate dvc in your projects and hopefully you will not need to worry about were to store your data sets and models because github does not support more than 100mb.
+
+![alt text](image/model-versioning-diagram.png)
+source: image taken from [dvc](https://dvc.org/doc/use-cases/data-and-model-files-versioning)
+
+## Get Started
