@@ -58,23 +58,23 @@ dvc remote modify myazure connection_string my-connection-string --local
 
 
 ## 4. Add Data
-First we have to download some data to our repository.
+First we have to download some data to our repository. Here I am downloading SQuAD V1 data set (to train a question answering model, more info [here](https://github.com/jwilliamn/drqa-model.git))
 
 ```bash
-mkdir data
+mkdir SQuAD
 
-wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json -P data/
-wget https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json -P data/
+wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json -P SQuAD/
+wget https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json -P SQuAD/
 ```
 
 Now we run the `dvc add` command to take the data under DVC control.
 ```bash
-dvc add data/
+dvc add SQuAD/
 ```
 
 This creates a `data.dvc` file that can be commited to **track versions of the data**. It also includes the data directory in the git ignore file.
 ```bash
-git add data.dvc
+git add SQuAD.dvc
 git commit -m "data added to DVC"
 ```
 
@@ -105,5 +105,5 @@ This will retrieve all data under DVC control.
 If you want just one part of the data add the dvc file corresponding to that data.
 
 ```bash
-dvc pull path/to/data.dvc
+dvc pull path/to/SQuAD.dvc
 ```
