@@ -72,6 +72,11 @@ Now we run the `dvc add` command to take the data under DVC control.
 dvc add SQuAD/
 ```
 
+or 
+```bash
+dvc add -f path/to/SQuAD.dvc SQuAD/
+```
+
 This creates a `data.dvc` file that can be commited to **track versions of the data**. It also includes the data directory in the git ignore file.
 ```bash
 git add SQuAD.dvc
