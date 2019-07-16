@@ -19,6 +19,8 @@ git clone https://github.com/jwilliamn/dvcML.git
 cd dvcML
 ```
 
+If you **cloned** this repository please remove .dvc/ and SQuAD.dvc to reproduce the following steps.
+
 ## 1. Install DVC
 Once we have our repo, we install DVC. It is a good practice to install in an isolated environment i.e. `virtualenv` or `conda`.
 
@@ -58,7 +60,7 @@ dvc remote modify myazure connection_string my-connection-string --local
 
 
 ## 4. Add Data
-First we have to download some data to our repository. Here I am downloading SQuAD V1 data set (to train a question answering model, more info [here](https://github.com/jwilliamn/drqa-model.git))
+First we have to download some data to our repository. Here I am downloading SQuAD V1 data set (to train a question answering model, more info [here](https://github.com/jwilliamn/qa-model.git))
 
 ```bash
 mkdir SQuAD
